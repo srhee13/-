@@ -1,0 +1,50 @@
+<!--pages/2048/2048.wxml-->
+<view class='container' bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd">
+<view id="game-panel">
+	<view class="view-round" id="box-main">
+		<view class="view-round box-lm" id="box0">{{box_data0}}</view>
+		<view class="view-round box-lm" id="box1">{{box_data1}}</view>
+		<view class="view-round box-lm" id="box2">{{box_data2}}</view>
+		<view class="view-round box-lm" id="box3">{{box_data3}}</view>
+		<view class="view-round box-lm" id="box4">{{box_data4}}</view>
+		<view class="view-round box-lm" id="box5">{{box_data5}}</view>
+		<view class="view-round box-lm" id="box6">{{box_data6}}</view>
+		<view class="view-round box-lm" id="box7">{{box_data7}}</view>
+		<view class="view-round box-lm" id="box8">{{box_data8}}</view>
+		<view class="view-round box-lm" id="box9">{{box_data9}}</view>
+		<view class="view-round box-lm" id="boxa">{{box_dataa}}</view>
+		<view class="view-round box-lm" id="boxb">{{box_datab}}</view>
+		<view class="view-round box-lm" id="boxc">{{box_datac}}</view>
+		<view class="view-round box-lm" id="boxd">{{box_datad}}</view>
+		<view class="view-round box-lm" id="boxe">{{box_datae}}</view>
+		<view class="view-round box-lm" id="boxf">{{box_dataf}}</view>
+	</view>
+</view>
+<view class="info">
+	<!--  提示点击的方向 -->
+	<view id="keys" bindtap='keys'>{{key}}</view>
+	<!-- 点击按钮重新开始  -->
+	<view style="width:200px;margin: 50px auto;">
+		<!-- <input type="button" value="开始" class="btn btn-primary" onClick="init();">
+		<input type="button" value="重新开始" class="btn btn-primary" onClick="if(window.confirm('您确定重新开始吗?')){init();}"> -->
+    <view class="body-view">
+      <button type="default" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="init" hover-class="other-button-hover"> 开始 </button>
+        <button type="default" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="reInit" hover-class="other-button-hover"> 重新开始 </button>
+    </view>
+	</view>
+	<view id="score">
+		总分数:00
+	</view>
+	<view id="max">
+		当前最大数:
+	</view>
+	<view id="time">
+		当前用时: 0s。
+	</view>
+	<!-- 提示快结束 -->
+	<view id="danger">
+	</view>
+  </view>
+</view>

@@ -1,0 +1,92 @@
+/* pages/2048/2048.wxss */
+.container{
+  padding: 20rpx;
+}
+#box-main {
+  width: 600rpx;
+	height: 600rpx;
+	padding: 5rpx;
+	border: 2rpx solid red;
+}
+
+#box0,#box1,#box2,#box3,#box4,#box5,#box6,#box7,#box8,#box9,#boxa,#boxb,#boxc,#boxd,#boxe,#boxf
+	{
+	/* height: 114rpx;
+	width: 136rpx; */
+  height: 18%;
+  width: 22%;
+	border: 1rpx solid red;
+	float: left;
+	margin: 6rpx;
+	padding-top: 25rpx;
+	text-align: center;
+	background: pink;
+	font-size: 30rpx;
+}
+
+#game-panel,#score,#max {
+	position: relative;
+	/* top: 20rpx; */
+}
+
+#keys,#tips,#time,#danger {
+	width: 200rpx;
+	margin: 20rpx auto;
+}
+
+#tips{
+	width:420rpx;
+	float:left;
+	padding:10rpx;
+	border:1rpx solid red;
+	background: pink;
+}
+
+#keys {
+	font-size: 84rpx;
+	color: #bbbbbb;
+}
+
+#danger {
+	color: #440044;
+}
+
+.btn {
+	display: inline-block;
+	padding: 6rpx 12rpx;
+	margin-bottom: 0;
+	font-size: 14rpx;
+	font-weight: normal;
+	line-height: 1.428571429;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	background-image: none;
+	border: 1rpx solid transparent;
+	border-radius: 6rpx;
+}
+
+.btn:hover,.btn:focus {
+	color: #333333;
+	text-decoration: none;
+}
+
+.btn-primary {
+	color: #ffffff;
+	background-color: #428bca;
+	border-color: #357ebd;
+	z-index: 99;
+}
+
+.btn-primary:hover,.btn-primary:focus,.btn-primary:active,.btn-primary.active,.open .dropdown-toggle.btn-primary
+	{
+	color: #ffffff;
+	background-color: #3276b1;
+	border-color: #285e8e;
+}
+
+.btn-primary:active,.btn-primary.active,.open .dropdown-toggle.btn-primary
+	{
+	background-image: none;
+}
