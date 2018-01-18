@@ -1,10 +1,10 @@
 {
   "pages": [
-    "pages/2048/2048",
+    "pages/resume/resume",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/list/lists"
-    
+    "pages/list/lists",
+    "pages/2048/2048"
   ],
   "window": {
     "backgroundTextStyle": "light",

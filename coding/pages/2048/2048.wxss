@@ -21,17 +21,12 @@
 	padding-top: 25rpx;
 	text-align: center;
 	background: pink;
-	font-size: 30rpx;
+	font-size: 26px;
 }
 
 #game-panel,#score,#max {
 	position: relative;
 	/* top: 20rpx; */
-}
-
-#keys,#tips,#time,#danger {
-	width: 200rpx;
-	margin: 20rpx auto;
 }
 
 #tips{
@@ -89,4 +84,23 @@
 .btn-primary:active,.btn-primary.active,.open .dropdown-toggle.btn-primary
 	{
 	background-image: none;
+}
+
+.info{
+  width: 100%;
+  margin-top:2em
+}
+
+.info-left{
+  width: 40%;
+  float: left;
+}
+
+.info-left button{
+  margin: 8px;
+}
+
+.info-right{
+  width: 50%;
+  float: right;
 }
